@@ -1,0 +1,16 @@
+<body bgcolor="#777777">
+
+<a href="{% url 'home' %}">Count Something Else</a>
+
+<h1>Counted</h1>
+
+<h2>There are {{ wc }} words in your text</h2>
+
+<h3>Your Text:</h3>
+
+<br/><br/>
+
+
+{% for word, counttotal in sortedwords %}
+	<div>{{ word }} - {{ counttotal}}</div>
+{% endfor %}

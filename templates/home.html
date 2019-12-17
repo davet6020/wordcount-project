@@ -1,0 +1,12 @@
+<body bgcolor="#777777">
+
+<a href="{% url 'about' %}">Go To About Page</a>
+
+<h1>Word Counter</h1>
+
+<form action="{% url 'count' %}">
+	<textarea cols="100" rows="10" name="fulltext"></textarea>
+
+	<br/><br/>
+	<input type="submit" value="Count!" />
+</form>
